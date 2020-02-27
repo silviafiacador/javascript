@@ -1,0 +1,15 @@
+* {box-sizing: border-box;
+    margin:0; padding:0;}
+
+ul {list-style-type: none;} 
+
+.verde {background-color: darkgreen;padding: 10px;}
+.vermelha {background-color: red;padding: 10px;}
+/* h1, h2 {text-align: center;}    ou.....*/
+#titulo, #subtitulo {text-align: center;}
+
+#caixa {width: 40%;
+    margin: 0 auto;
+    border: solid red 1px;
+    }
+
