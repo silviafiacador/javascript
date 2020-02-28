@@ -1,13 +1,15 @@
 var result = document.getElementById("result");
-
+var n1=0, n2=0
+var operacao
 function onNumberClicked(numberButton){
-    
+  
+
     if(result.innerHTML == "0"){
         result.innerHTML = numberButton.innerHTML;
-    }
+        }
     else{
         result.innerHTML += numberButton.innerHTML;
-    }
+       }
 }
 
 function onClearClicked(){
@@ -15,24 +17,30 @@ function onClearClicked(){
 }
 
 function onEqualsClicked(){
-    //TODO implement this function
+    n2= result.innerHTML
+    if (operacao =="+") 
+    {
+        result.innerHTML = parseInt(n1)+parseInt(n2)
+    }
 }
 
 function onDivideClicked(){
-    //TODO implement this function
+    operacao ="/"
 }
 
 
 
 function onAddClicked(){
-    //TODO implement this function
+    n1= result.innerHTML
+    result.innerHTML = 0
+    operacao ="+"
 }
 
 function onSubtractClicked(){
-    //TODO implement this function
+    operacao ="-"
 }
 
 function onMultiplyCliked(){
-    //TODO implement this function
+    operacao = "*"
 }
 
