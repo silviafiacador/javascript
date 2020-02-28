@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2.2.1 - parte 2 - ex2</title>
+</head>
+<body>
+    
+    <script>
+        // var texto ="nursesrun"
+        var texto = "silvia"
+        var tamanho = texto.length
+        tamanho = parseInt(tamanho/2)    
+        var primeiraParte = texto.substring(0,tamanho)
+        var segundaParte = texto.substring(tamanho+1,tamanho*2+1)
+        /* invertendo-se a segundaParte para comparar com a primeiraParte */
+        var reverso=""
+        var array=[]
+        for (var i =0;i<=4;i++) {
+            array[i]= segundaParte.substring(i,i+1) 
+        }
+        for (var i =4;i>=0;i--) {
+             reverso=reverso +array[i]
+        }
+        if (primeiraParte==reverso) {
+            console.log("É palíndrome")
+        }
+        else {
+            console.log("Não é palíndrome")
+        }
+        alert(primeiraParte)
+        alert(reverso)
+    </script>
+</body>
+</html>
