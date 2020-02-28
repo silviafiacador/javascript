@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+//tipo de pilha: first in first out (fifo)
+//ou last in first out (lifo)
+
+//jsbin.com
+
+function funcao1() {
+    funcao2()
+    console.log("executado função 1")
+  }
+  
+  function funcao2() {
+    funcao3()
+    console.log("executado função 2")
+    
+  }
+  function funcao3() {
+    console.log("executado função 3")
+  }
+  
+  funcao1();
+</script>
+  
