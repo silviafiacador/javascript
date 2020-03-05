@@ -5,13 +5,43 @@
    
    <body>   
       <script language = "JavaScript" type = "text/javascript">
-         media = navigator.mimeTypes["video/quicktime"];
+         media = navigator.mimeTypes["video/mp4"];
+         navigator.mimeTypes
          
          if (media) {
-            document.write("<embed src = 'quick.mov' height = 100 width = 100>");
-         } else {
-            document.write("<img src = 'quick.gif' height = 100 width = 100>");
+            document.write("<embed src='https://www.youtube.com/embed/HZna74QsjAQ' height=200 width=200>");
+         } else {  
+             document.write("<img src='imagem.png' height=200 width=200>");
          }
       </script>      
    </body>
+   <!-- O MIME type é o mecanismo para dizer ao cliente a variedade de documentos transmitidos: a extensão de um nome de arquivo não tem significado na web. Portanto, é importante que o servidor esteja configurado corretamente, de modo que o MIME-type correto seja transmitido com cada documento. Os navegadores costumam usar o MIME-type para determinar qual ação usar como padrão para fazer quando um recurso é obtido.
+
+Existem muitos tipos de documentos, por isso há muitos MIME-types. Neste artigo, listaremos os mais importantes para o desenvolvimento da Web, mas você pode encontrá-los para os tipos de documento aplicáveis ​​neste artigo dedicado: Lista completa de MIME types.
+
+MIME types não são a única maneira de transmitir as informações do tipo de documento:
+
+Os sufixos de nome são usados ​​às vezes, especialmente em sistemas Microsoft Windows. Nem todos os sistemas operacionais consideram esses sufixos significativos (especialmente Linux e Mac OS), e como um tipo MIME externo, não há garantia de que eles estejam corretos.
+Números mágicos. A sintaxe dos diferentes tipos de arquivos permite a inferência de tipo de arquivo, olhando para a estrutura. Por exemplo. Cada arquivo GIF começa com o valor hexadecimal 47 49 46 38 [GIF89] ou arquivos PNG com 89 50 4E 47 [.PNG]. Nem todos os tipos de arquivos têm números mágicos, portanto este não é um sistema 100% confiável.
+Na Web, apenas o MIME type é relevante e deve ser definido com cuidado. Navegadores e servidores usavam frequentemente heurísticas baseadas em sufixos ou números mágicos para definir o tipo MIME, verificar a coerência ou encontrar o tipo MIME correto quando apenas um tipo genérico foi fornecido.
+
+Sintaxe
+Estrutura geral
+tipo/subtipo
+A estrutura de um MIME type é muito simples; Consiste de um tipo e um subtipo, duas strings, separados por um '/'. Nenhum espaço é permitido. O tipo representa a categoria e pode ser um tipo discreto ou multipart. O subtipo é específico para cada tipo.
+
+Um MIME type é case-insensitive mas tradicionalmente é escrito tudo em minúsculas.
+
+Tipos discretos
+text/plain
+text/html
+image/jpeg
+image/png
+audio/mpeg
+audio/ogg
+audio/*
+video/mp4
+application/octet-stream 
+quicktime = reprodutor  de vídeo oficial da Apple
+-->
 </html>
